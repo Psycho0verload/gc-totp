@@ -1,0 +1,206 @@
+/* latin-ext */
+@font-face {
+  font-family: "Mr Dafoe";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/lJwE-pIzkS5NXuMMrFijibIgxC_DZdM.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Mr Dafoe";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/lJwE-pIzkS5NXuMMrFitibIgxC_D.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/4UaZrEtFpBI4f1ZSIK9d4LjJ4vowOwtmPXws9Iq2uBiM.woff)
+    format("woff");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/4UaZrEtFpBI4f1ZSIK9d4LjJ4vowOwpmPXws9Iq2uBiM.woff)
+    format("woff");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/4UaZrEtFpBI4f1ZSIK9d4LjJ4vowOwRmPXws9Iq2uA.woff)
+    format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(rgba(118, 0, 191, 0.5) 0%, transparent 70%),
+    linear-gradient(#0b161e 40%, #202076 70%);
+  perspective: 700px;
+  font-size: clamp(10px, 2vw, 20px);
+}
+
+h1 {
+  position: relative;
+  font-family: "Exo";
+  font-size: 4.1em;
+  margin: 0;
+  transform: skew(-15deg);
+  letter-spacing: 0.03em;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  top: -0.1em;
+  right: 0.05em;
+  width: 0.4em;
+  height: 0.4em;
+  background: radial-gradient(
+      white 3%,
+      rgba(255, 255, 255, 0.3) 15%,
+      rgba(255, 255, 255, 0.05) 60%,
+      transparent 80%
+    ),
+    radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50%/5%
+      100%,
+    radial-gradient(rgba(255, 255, 255, 0.2) 50%, transparent 60%) 50% 50%/70%
+      5%;
+  background-repeat: no-repeat;
+}
+h1 span:first-child {
+  display: block;
+  text-shadow: 0 0 0.1em #8ba2d0, 0 0 0.2em black, 0 0 5em #165ff3;
+  -webkit-text-stroke: 0.06em rgba(0, 0, 0, 0.5);
+}
+h1 span:last-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    #032d50 25%,
+    #00a1ef 35%,
+    white 50%,
+    #20125f 50%,
+    #8313e7 55%,
+    #ff61af 75%
+  );
+  -webkit-text-stroke: 0.01em #94a0b9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid {
+  background: linear-gradient(
+      transparent 65%,
+      rgba(46, 38, 255, 0.4) 75%,
+      #7d41e6 80%,
+      rgba(46, 38, 255, 0.4) 85%,
+      transparent 95%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 65%,
+      rgba(46, 38, 255, 0.4) 75%,
+      #7d41e6 80%,
+      rgba(46, 38, 255, 0.4) 85%,
+      transparent 95%
+    );
+  background-size: 30px 30px;
+  width: 200vw;
+  height: 300vh;
+  position: absolute;
+  bottom: -120vh;
+  transform: rotateX(-100deg);
+  -webkit-mask-image: linear-gradient(black, rgba(0, 0, 0, 0) 80%);
+}
+
+.token {
+  font-family: "Mr Dafoe";
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5.5em;
+  margin-top: -0.6em;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+  transform: rotate(-7deg);
+}
+
+/* For Firefox
+progress::-moz-progress-bar {
+  background: green;
+}
+
+For Chrome or Safari
+progress::-webkit-progress-value {
+  background: green;
+}
+
+For IE10
+progress {
+  background: green;
+} */
+
+.progress.custombar::-webkit-progress-value {
+  background-color: #fe05e1;
+}
+.progress.custombar::-moz-progress-bar {
+  background-color: #fe05e1;
+}
+.progress.custombar::-ms-fill {
+  background-color: #fe05e1;
+}
+.progress.custombar:indeterminate {
+  background-image: linear-gradient(to right, #3298dc 30%, #ededed 30%);
+}
+
+div.copyright{
+ text-align: center!important;
+ margin: 0 auto;
+}
+
+@media screen and (min-width: 1068px) {
+  .container {
+    max-width: 600px;
+    width: 600px;
+  }
+}
